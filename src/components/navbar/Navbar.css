@@ -1,0 +1,217 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar__Search-movies {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0);
+}
+
+.netflix-logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.navbar__items-left_container {
+    display: flex;
+    width: 100%;
+}
+
+.navbar__items-left {
+    margin-left: 2.5rem;
+    padding-top: 1px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar__items-left > li {
+    list-style: none;
+    color: var(--color-white);
+    margin-right: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.netflix-logo img {
+    width: 100%;
+    height: 90%;
+}
+
+.navbar__items-right_container {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 55%;
+    margin-right: .5rem;
+}
+
+.search__icon {
+    color: var(--color-white);
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 2px;
+}
+
+#search__input {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-white);
+    width: 70%;
+}
+
+  
+.netflix-avatar {
+   
+    height: 35px;
+}
+
+.netflix-avatar img {
+   
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+   
+    .navbar__items-left > li {
+        list-style: none;
+        color: var(--color-white);
+        margin-right: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .navbar__items-right_container {
+
+        width: 40%;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar__items-left {
+        display: none;
+    }
+    .navbar__items-left_container {
+        display: flex;
+        width: 60%;
+    }
+     #search__input {
+        width: 100%;
+    }
+    .search__icon {
+        margin-left: .5rem;
+    }
+   
+}
+
+@media screen and (max-width: 850px) {
+    .search {
+    width: 60%; 
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    
+
+   
+    
+
+    .netflix-logo {
+        width: 70px;
+    }
+    
+    .netflix-avatar {
+        height: 30px;
+    }
+    
+   
+    
+    .search {
+        margin-right: .5rem;
+        width: 100%;
+        height: 30px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 450px) {
+    .search { 
+        width: 100%;
+    }
+    #search__input {
+       
+        font-size: 1rem;
+        
+      
+        width: 100%;
+    }
+    
+    .navbar__items-right_container {
+
+        width: 55%;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .netflix-logo {
+        width: 65px;
+    }
+    
+    .netflix-avatar {
+        height: 25px;
+    }
+
+    .navbar__items-right_container {
+
+        width: 75%;
+        
+    }
+    .search {
+       
+        height: 25px;
+       
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .navbar__items-right_container {
+
+        width: 95%;
+        
+    }
+    #search__input {
+       
+        font-size: .85rem;
+    }
+}
